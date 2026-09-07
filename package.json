@@ -1,0 +1,25 @@
+{
+  "name": "pi-copy-snippet",
+  "version": "0.1.0",
+  "description": "Copy code blocks from pi responses using a keyboard selector or clickable fullscreen widget",
+  "type": "module",
+  "license": "MIT",
+  "files": ["src", "README.md", "LICENSE"],
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["pi-package", "pi-extension", "clipboard"],
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.85.0",
+    "@earendil-works/pi-tui": "^0.85.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
